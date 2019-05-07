@@ -1,0 +1,110 @@
+.text-aviso{
+    min-width: 700px;
+}
+.pie_pagina{
+    position: fixed; 
+    bottom: 0;
+    color:#888!important;
+    font-weight: normal;
+    transition: color .2s;
+}
+.pie_pagina:hover{
+    color:#222!important;
+}
+.explicacion{
+    color:#888!important;
+    font-weight: lighter;
+    transition: color .2s;
+}
+.explicacion:hover{
+    color:#222!important;
+}
+.mas-info{
+    font-size: medium;
+    padding:5px;
+    padding-right: 30px;
+    background-color:rgba(0,0,0,0.02);
+    border-color: rgba(0,0,0,0.04);
+    opacity: 0.9;
+    color:#777;
+}
+
+.login-box{
+    width:412px;
+    margin:10vh auto;
+    background-color:#f3f3f3;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.login-box form{
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+}
+.login-box .login-input{
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.login-box .login-input:focus { z-index: 2; }
+.login-box .form-signin input[type="email"]{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.login-box .form-signin input[type="password"]{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.login-box .social-login{
+    width:390px;
+    margin:0 auto;
+    margin-bottom: 14px;
+}
+.login-box .social-btn{
+    font-weight: 100;
+    color:white;
+    width:190px;
+    font-size: 0.9rem;
+}
+
+.login-box-body, .register-box-body {
+    padding: 20px;
+    border-top: 0;
+}
+
+.login-box button[type="submit"]{ margin-top:10px; }
+
+.login-box .facebook-btn{  background-color:#3C589C; }
+
+/*.login-box .form-reset, .login-box .form-signup{ display: none; }*/
+
+.login-box .form-signup .social-btn{ width:210px; }
+
+.login-box .form-signup input { margin-bottom: 2px;}
+
+
+.form-signup .social-login{
+    width:210px !important;
+    margin: 0 auto;
+}
+
+.table-data{
+    font-size: medium;
+    background-color:rgba(0,0,0,0.02);
+    border-color: rgba(0,0,0,0.04);
+    opacity: 0.9;
+    color:#777;
+}
+
+.inputError {
+    border-color: red;    
+}
+
+.alert-div{
+    max-height: 500px;
+    background-color: pink;
+}

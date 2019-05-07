@@ -1,0 +1,15 @@
+doctype html
+HTML
+    HEAD
+        title #{title}
+        link(rel='stylesheet', href='css/lib/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/DE_style.css')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    BODY
+        main.container
+            block header
+                div.page-header.col-sm-12.tab
+                    header.header
+                        h1 #{title}
+            block content

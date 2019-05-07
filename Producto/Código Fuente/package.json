@@ -1,0 +1,19 @@
+{
+  "name": "ISW_LOGIN_Facebook",
+  "version": "0.1.0",
+  "description": "Simple ejemplo para la user 'Login con Facebook', desarrollado con Express y Pug",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start DE_server.js --watch"
+  },
+  "author": "Genaro Franceschelli",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "pm2": "^3.5.0"
+  }
+}

@@ -1,0 +1,22 @@
+extends DE_default
+
+block content
+    div.container.col-sm-12
+            div.login-box.form-group#divRegistrarse
+                form.form-signup#registrarse
+                    div.login-logo
+                    div.social-login
+                        button.btn.facebook-btn.social-btn#btnFacebook(type='button')
+                            span
+                                i.fab.fa-facebook-f
+                                |   Utilizar mi cuenta de Facebook
+                    p(style='text-align:center')
+                        | OR
+                    input.form-control.login-input(type='text', id='input_user', placeholder='Nombre de Usuario')
+                    input.form-control.login-input(type='email', id='input_email', placeholder='Email')
+                    input.form-control.login-input(type='password',id='input_password', placeholder="Contraseña")
+                    input.form-control.login-input(type='password',id='input_repeat_password', placeholder="Repita la Contraseña")
+                    button.btn.btn-primary.btn-block#btnRegistrar(type='submit')
+                        i.fas.fa-user-plus
+                        |   Registrarse
+                br
