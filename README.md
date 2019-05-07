@@ -5,7 +5,7 @@ En este repositorio se encuentra la implementación de la User Story "Realizar u
 # Universidad Tecnológica Nacional Facultad Regional Córdoba
 # Cátedra de Ingeniería de Software.
 # 4K4 
-Grupo 1: /n
+Grupo 1: 
 Luciana Aguero - 67353 (luuchita1995@gmail.com)
 Gastón Cabrera - 67051 (gasty065@gmail.com)
 Genaro Franceschelli - 67099 (gena.franceschelli@gmail.com)
