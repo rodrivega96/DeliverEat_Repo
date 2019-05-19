@@ -29,6 +29,14 @@ $('#input_monto').change(function(){
   $('#input_comision').val(formatter.format((num*10)/100));
 });
 
+$('#input_inmediata').change(function(){
+  $('#input_fecha').val("");
+  if(this.checked){
+    $('#input_fecha').attr("disabled", true);
+  }else
+    $('#input_fecha').attr("disabled", false);
+});
+
 /* Eventos al realizar el pedido */
 function validarPedido(){
   var values = {};
