@@ -1,0 +1,53 @@
+extends ../DE_default
+
+block content
+    script(src='/src/js/DE_pedido.js')
+    div.form-row.align-items-center.mt-4
+        div.card.rounded-0.mx-auto.col-sm-6#divPedido
+            form.form-box#formPedido
+                div.card-header
+                    h3.mb-0
+                        | Pedido de "Lo que sea"
+                div.card-body
+                    div.form-group
+                        label.col-form-label(for='input_item')
+                            | * Item
+                        input.form-control#input_item(type='text', placeholder='¿Qué desea buscar?', name='item')
+                    div.form-group
+                        label.col-form-label(for='input_u_comercio')
+                            | * Comercio
+                        input.form-control#input_u_comercio(type='text', placeholder='Dirección del Comercio', name='comercio')
+                    div.form-group
+                        label.col-form-label(for='input_u_entrega')
+                            | * Lugar de Entrega
+                        input.form-control#input_u_entrega(type='text', placeholder='Dirección de Entrega', name='entrega')
+                    div.form-group
+                        label.col-form-label(for='input_fecha')
+                            | * Fecha de entrega
+                        input.form-control#input_fecha(type='text', placeholder='Fecha de Entrega', name='fecha')
+                        div.form-check
+                          input.form-check-input#input_inmediata(type='checkbox')
+                          label.form-check-label(for='input_inmediata')
+                    div.form-group
+                        label.col-form-label(for='input_imagen')
+                            | * Foto del producto (opcional)
+                        input.form-control-file#input_imagen(type='file', placeholder='Foto (opcional)', name='archivo')
+                    div.form-group
+                        label.col-form-label(for='input_monto')
+                            | * Pago
+                        div.form-row
+                          input.form-control#input_monto(type='list-group', placeholder='Monto a pagar', name='monto')
+                          input.form-control#input_comision(type='list-group', placeholder='Comision', disabled="true", name='comision')
+                    div.form-group
+                        div.dropdown
+                            button.btn.btn-secondary.dropdown-toggle#input_pago(type='button',data-toggle='dropdown', aria-haspopup="true", aria-expanded="false")
+                                | Método de Pago
+                            div.dropdown-menu(aria-labelledby="input_pago")
+                                button.dropdown-item(type='button')
+                                    | Efectivo
+                                button.dropdown-item(type='button')
+                                    | Tarjeta VISA
+
+                    div.form-group
+                            button.btn.btn-primary.btn-block#realizarPedido(type='submit')
+                                | Realizar Pedido

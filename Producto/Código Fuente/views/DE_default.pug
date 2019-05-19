@@ -2,14 +2,14 @@ doctype html
 HTML
     HEAD
         title #{title}
-        link(rel='stylesheet', href='css/lib/bootstrap/css/bootstrap.min.css')
-        link(rel='stylesheet', href='/css/DE_style.css')
+        link(rel='stylesheet', href='/src/css/lib/bootstrap/css/bootstrap.min.css')
+        script(src='/src/js/lib/jquery/jquery.min.js')
+        script(src='/src/css/lib/bootstrap/js/bootstrap.bundle.min.js')
         meta(name='viewport' content='width=device-width, initial-scale=1')
 
     BODY
         main.container
             block header
-                div.page-header.col-sm-12.tab
-                    header.header
-                        h1 #{title}
+                div.pb-2.mt-4.mb-2.border-bottom
+                    h1 #{title}
             block content
