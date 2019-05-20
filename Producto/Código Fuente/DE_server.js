@@ -13,10 +13,13 @@ app.get('/signup', (req,res) =>{
 });
 
 // US Pedido
-app.get('/pedido/:tipo', (req,res) =>{
-    if(req.params.tipo === "loquesea"){
+app.get('/pedido/:tipo/:formulario?', (req,res, next) =>{
+    if(!req.params.formulario && req.params.tipo === "loquesea"){
         res.render("pedido/DE_loquesea", {title: 'Nuevo Pedido'});
-    }else{
+    }else if (req.params.formulario === "tarjeta") {
+        res.sendFile("pedido/DE_tarjeta.html", {root: __dirname+"/views/"});
+    }
+    else{
         res.redirect('/signup');
     }
 });

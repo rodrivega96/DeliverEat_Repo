@@ -4,9 +4,12 @@ block content
     script(src='/src/js/DE_pedido.js')
     script(src='/src/css/lib/moment.js')
     script(src='/src/css/lib/tempusdominus-bootstrap-4.min.js')
-    link(type='stylesheet', href='/src/css/lib/tempusdominus-bootstrap-4.min.css')
-    link(type='stylesheet', href='/src/css/lib/font-awesome-4.7.0/css/font-awesome.css')
-    div.form-row.align-items-center.mt-4
+    link(rel='stylesheet', href='/src/css/lib/tempusdominus-bootstrap-4.min.css')
+    script(src='/src/js/lib/jquery.mask.min.js')
+    script(src='/src/js/lib/jquery.validate.min.js')
+    script(src='/src/js/lib/jquery.validate.unobtrusive.min.js')
+    link(rel='stylesheet', href='/src/css/DE_pago.css')
+    div.form-row.align-items-center.mt-4#main_div(ng-app="deliverEat", ng-controller="pedidoCtrl")
         div.card.rounded-0.mx-auto.col-sm-6#divPedido
             form.form-box#formPedido
                 div.card-header
@@ -39,7 +42,7 @@ block content
                             | Entrega Inmediata
                     div.form-group
                         label.col-form-label(for='input_imagen')
-                            | * Foto del producto (opcional)
+                            | Foto del producto (opcional)
                         input.form-control-file#input_imagen(type='file', placeholder='Foto (opcional)', name='archivo')
                     div.form-group
                         label.col-form-label(for='input_monto')
@@ -52,9 +55,9 @@ block content
                             button.btn.btn-secondary.dropdown-toggle#input_pago(type='button',data-toggle='dropdown', aria-haspopup="true", aria-expanded="false")
                                 | Método de Pago
                             div.dropdown-menu(aria-labelledby="input_pago")
-                                button.dropdown-item(type='button')
+                                button.dropdown-item#pago_efectivo(type='button')
                                     | Efectivo
-                                button.dropdown-item(type='button')
+                                button.dropdown-item#pago_tarjeta(type='button')
                                     | Tarjeta VISA
 
                     div.form-group
