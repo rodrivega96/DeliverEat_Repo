@@ -11,7 +11,7 @@ En este repositorio se encuentra la implementación de la User Story "Realizar u
 ### 4K4 - Grupo 1: 
   * Luciana Aguero - 67353 (luuchita1995@gmail.com)
   * Gastón Cabrera - 67051 (gasty065@gmail.com)
-  * Genaro Franceschelli - 67099 (gena.francesceli@gmail.com)
+  * Genaro Franceschelli - 67099 (**********@gmail.com)
   * María Lucía Okamoto - 66884 (luuokamoto95@gmail.com)
   * Rodrigo Vega Gimenez - 67027 (rvega389@gmail.com)
   * Maximiliano Yacuzzi - 66276 (maxiyacuzzi15@gmail.com)
